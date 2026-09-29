@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BHUSAMANVAY – One acquisition case, proposal to possession</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<header class="hero">
+<div class="sk">National Land Acquisition Operating System</div>
+<h1>Welcome to BHUSAMANVAY</h1>
+<q>“A bridge between public purpose and private land — every step visible, every decision on record.”</q>
+<p class="s"><span class="tag" style="color:#f0a04b;border-color:#f0a04b;background:none">SIH 2026 · PS 26016 · RFCTLARR Act, 2013</span><br>When the government needs land for a road, many people must do many steps. BHUSAMANVAY keeps all of it in one place, so everyone can see what happened and what comes next.</p>
+<button class="btn" data-go="summary">Read the summary</button><button class="btn o" data-go="proto">See the prototype</button><button class="btn o" data-go="arch">See how it works</button>
+</header>
+<nav><b>BHUSAMANVAY</b><button class="tb on" data-t="summary">Summary</button><button class="tb" data-t="proto">Prototype screens</button><button class="tb" data-t="arch">Architecture</button><button class="tb" data-t="detail">Details</button><button class="tb" data-t="novel">Novelty &amp; status</button><button class="tb" data-t="flow">Flow</button></nav>
+
+<div class="tab on" id="t-summary"><section id="easy"><h2>BHUSAMANVAY in one minute</h2>
+<p class="lead">Tap each step to read the story in the simplest words.</p>
+<div class="stages" id="ez"></div><div class="panel" id="ezp"></div>
+<h3 style="margin-top:32px">Words you will see</h3>
+<div class="chain" id="gl"></div><div class="panel" id="glp">Tap a word to see what it means.</div></section>
+<section id="problem">
+<h2>The problem</h2>
+<p class="lead">When the government needs land for a highway, railway or industrial project, dozens of steps, officers, departments and documents are involved. Today they live in separate places.</p>
+<div class="grid">
+<div class="card"><h3>Scattered records</h3><p>Land records, survey data, notices and payments sit in different systems with no single view of one acquisition.</p></div>
+<div class="card"><h3>No visible next step</h3><p>Officers cannot easily see who must act, what is blocking the case, or which deadline is slipping.</p></div>
+<div class="card"><h3>Citizens left in the dark</h3><p>Landowners do not know their case status, when to object, or when compensation will arrive.</p></div>
+<div class="card"><h3>Weak audit trail</h3><p>Who approved what, and when, is hard to reconstruct. Skipped steps go unnoticed.</p></div>
+</div></section>
+
+<section id="idea" style="padding-top:0">
+<h2>The solution: one acquisition case</h2>
+<p class="lead">BHUSAMANVAY makes the <b>case</b> the centre of everything. Land, people, tasks, evidence, decisions, money and history all belong to the same case.</p>
+<div class="chain"><span>Project</span><i>→</i><span>Parcel</span><i>→</i><span>Acquisition Case</span><i>→</i><span>Workflow / Task</span><i>→</i><span>Evidence / Field</span><i>→</i><span>Decision / Review</span><i>→</i><span>Audit</span></div>
+<div class="grid">
+<div class="card"><h3>Officers</h3><p>Manage cases, see pending actions and deadlines.</p></div>
+<div class="card"><h3>Field officers</h3><p>Verify land on a mobile app, even offline.</p></div>
+<div class="card"><h3>Citizens</h3><p>Track “My land acquisition case” in plain language.</p></div>
+<div class="card"><h3>Senior officers</h3><p>See bottlenecks and overdue cases across projects.</p></div>
+</div></section>
+
+</div><div class="tab" id="t-proto"><section><h2>The prototype, screen by screen</h2><p class="lead">Real screens from our working mock. Tap a step to see what it shows and why it matters. All data is fictional (MOCK / SANDBOX). The screenshots still carry the earlier name; the product is BHUSAMANVAY.</p><div class="stages" id="ps"></div><div class="panel" id="pp"></div><h3 style="margin-top:32px">The 11 roles</h3><div class="tbl"><table id="rt"><tr><th>Role</th><th>Level</th><th>What they do</th></tr></table></div></section></div><div class="tab" id="t-arch"><section id="arch" style="padding-top:0">
+<h2>Architecture</h2>
+<p class="lead">Click any block to see what it is, what it does, who uses it, what data passes through it and what it connects to. Hover to highlight connections.</p>
+<div class="flow" id="flow"></div>
+<div class="arch" id="arch-d"></div>
+<div class="panel" id="ap" style="margin-top:14px"><h3>Select a block</h3><p>Every block above is clickable. The case flow shown at the top of this section animates gently to show how data moves.</p></div>
+<div class="bar" style="margin-top:14px"><button class="btn" id="tour">Play guided tour</button><b>See in architecture:</b>
+<button class="btn o" style="color:var(--ink)" data-hl="parcel">Land parcel</button>
+<button class="btn o" style="color:var(--ink)" data-hl="field">Field verification</button>
+<button class="btn o" style="color:var(--ink)" data-hl="approval">Approval</button>
+<button class="btn o" style="color:var(--ink)" data-hl="timeline">Case timeline</button>
+<button class="btn o" style="color:var(--ink)" data-hl="payment">Payment</button></div>
+</section>
+
+</div><div class="tab" id="t-detail"><section><h2>Everything in BHUSAMANVAY</h2><p class="lead">Open any topic. Each one shows whether it is working, a prototype, or planned.</p><div id="det"></div></section></div><div class="tab" id="t-novel"><section id="novel" style="padding-top:0">
+<h2>What is new, and what was missing</h2>
+<div class="tbl"><table><tr><th>What is missing today</th><th>What BHUSAMANVAY adds</th></tr>
+<tr><td>Land, workflow and payment tools do not talk to each other</td><td>One case-centric record linking parcel, task, evidence, decision and audit</td></tr>
+<tr><td>Steps can be skipped or done out of order</td><td>Workflow engine locks the next stage until the previous one is complete</td></tr>
+<tr><td>Location and authority are matched by hand</td><td>Jurisdiction routing from State → District → Taluk → Village to the responsible authority</td></tr>
+<tr><td>Field data is lost without network</td><td>Field officer app designed for offline capture and later sync</td></tr>
+<tr><td>Citizens cannot see progress</td><td>Citizen portal with plain-language status and next step</td></tr>
+<tr><td>Replacing existing systems is unrealistic</td><td>Orchestration, not replacement: adapters connect DILRMP/ULPIN, state land records, Bhoomi Rashi, PFMS, PM Gati Shakti</td></tr>
+<tr><td>Delays found too late</td><td>Rule-based bottleneck detection against SLA now; predictive intelligence planned</td></tr>
+<tr><td>Weak accountability</td><td>Every action logged: who, what, when, case, old status → new status</td></tr></table></div>
+</section>
+
+<section id="status" style="padding-top:0">
+<h2>Implementation status</h2>
+<div class="grid">
+<div class="card"><span class="tag ok">Working / demonstrated</span><p style="margin-top:8px">Authentication, role-based access, case concepts, core UI, architecture, GIS interface, audit concepts.</p></div>
+<div class="card"><span class="tag a">Prototype / simulated</span><p style="margin-top:8px">Government adapters, payment integration, external notification services, rule-based bottleneck detection.</p></div>
+<div class="card"><span class="tag w">Planned / future</span><p style="margin-top:8px">Production government APIs, real national datasets, production ML, national deployment.</p></div>
+</div>
+<p class="lead" style="margin-top:20px">Grounded in the RFCTLARR framework, Department of Land Resources guidance, government land-record systems, infrastructure project workflows, GIS research and expert/field inputs. Final citations to be added by the team.</p>
+</section>
+</div><div class="tab" id="t-flow"><section id="journey" style="padding-top:0">
+<h2>The case flow: LA-TN-2026-001</h2>
+<p class="lead">Tamil Nadu Highway Expansion Project. Press <b>Play flow</b> to move the case from proposal to closure, or click any of the 17 stages.</p>
+<div class="case"><b>Case overview</b>
+<div class="kv" id="kv"></div></div>
+<div class="bar"><button class="btn" id="go">Play flow</button><button class="btn o" id="nx" style="color:var(--ink)">Complete current stage</button><button class="btn o" id="rs" style="color:var(--ink)">Reset</button></div>
+<div class="stages" id="stages"></div>
+<div class="panel" id="sp"></div>
+<div class="log" id="log"><b>Audit timeline</b></div>
+</section>
+
+</div><footer>BHUSAMANVAY · SIH 2026 · Prototype. Data shown is fictional.</footer>
+
+<script src="script.js"></script></body></html>
